@@ -1,0 +1,438 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    height: 150px;
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.new{
+    height: 70px;
+    width: 12%;
+    /* border: 1px solid green; */
+    margin-left: 70px;
+}
+.new:hover{
+    cursor: pointer;
+}
+.new2{
+    height: 70px;
+    width: 17%;
+    /* border: 1px solid blue; */
+    margin-right: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    height: 80%;
+    width: 15%;
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* transition-duration: 0.5s; */
+}
+.bar{
+    font-size: 25px;
+}
+.bar:hover{
+    cursor: pointer;
+    color: black;
+}
+.face:hover{
+    cursor: pointer;
+    color: #FF3272;
+    transition-duration: 0.5s;
+}
+.twit:hover{
+    cursor: pointer;
+    color: #FF3272;
+    transition-duration: 0.5s;
+}
+.g:hover{
+    cursor: pointer;
+    color: #FF3272;
+    transition-duration: 0.5s;
+}
+.pin:hover{
+    cursor: pointer;
+    color: #FF3272;
+    transition-duration: 0.5s;
+}
+.main{
+    height: max-content;
+    width: 100%;
+    /* border: 1px solid blue; */
+    display: grid;
+    grid-template-rows: 300px 300px 300px 300px 300px;
+    grid-template-columns: 25% 25% 25% 25%;
+    /* overflow: hidden; */
+}
+.c1{
+    grid-column-start:1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end:3 ;
+   /* border:1px solid; */
+   overflow: hidden;
+}
+.img{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-image: url(./img/1.jpg);
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    transition-duration: 0.5s;
+}
+.img:hover{
+    transform: scale(1.1);
+}
+.new7{
+    position: absolute;
+    height: 100px;
+    width: 80%;
+    /* border: 1px solid red; */
+    font-size: 35px;
+    text-align: center;
+    font-family: "poppin",sans-serif;
+    margin-top: -250px;
+    left: -200px;
+}
+.new7 h1{
+    color: white;
+}
+.new7 h1:hover{
+    color: #FF3272;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+.new8{
+    position: absolute;
+    height: 60px;
+    width: 15%;
+    /* border: 1px solid #000; */
+    background-color: #FF3272;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-family: "poppin",sans-serif;
+    font-size: 16px;
+    top: 600px;
+    color: white;
+    left: 70px;
+    /* overflow: hidden; */
+    transition-duration: 0.5s;
+}
+.new8:hover{
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid #FF3272;
+    color: #FF3272;
+}
+.c2{
+    position: relative;
+    background-image: url(./img/2.jpg);
+    background-size: 100% 100%;
+}
+.new9{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid #000; */
+    /* top: 100px; */
+    overflow: hidden;
+}
+.new9::after{
+    position: absolute;
+    content: "";
+    height: 25%;
+    width: 100%;
+    top: 80px;
+    left: 100%;
+    background-color: black;
+    transition-duration: 0.5s;
+    opacity: 0;
+}
+.new9:hover::after{
+    left: 50%;
+    opacity: 1;
+}
+.new9::before{
+    position: absolute;
+    content: "";
+    height: 25%;
+    width: 100%;
+    top: 80px;
+    left: -100%;
+    background-color: #FF3272;
+    transition-duration: 0.5s;
+    opacity: 0;
+}
+.new9:hover::before{
+    left: -50%;
+    opacity: 1;
+}
+.new11{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid green; */
+}
+.new12{
+    height: 50px;
+    width: 15%;
+    /* border: 1px solid blue; */
+    background-color: white;
+    border-radius: 3px;
+    color: #FF3272;
+    top: 170px;
+    left: 100px;
+    position: absolute;
+    opacity: 0;
+    transition-duration: 0.5s;
+    z-index: 1;
+}
+.n1{
+    left: 180px;
+}
+.chain{
+    font-size: 20px;
+    margin-top: 18px;
+    margin-left: 15px;
+}
+.srch{
+    font-size: 20px;
+    margin-top: 16px;
+    margin-left: 17px;
+}
+.new11:hover .new12{
+    top: 90px;
+    opacity: 1;
+}
+.new12:hover{
+    cursor: pointer;
+    color: white;
+    background-color: black;
+}
+.c3{
+    background-image: url(./img/3.jpg);
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.5s;
+}
+.c3:hover{
+    cursor: pointer;
+}
+.new6{
+    position: relative;
+    height: 100px;
+    /* width: 20%; */
+    /* border: 1px solid #000; */
+    font-size: 55px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    font-family: "poppin",sans-serif;
+}
+.c4{
+    position: relative;
+    background-image: url(./img/4.jpg);
+    background-size: 100% 100%;
+}
+.c5{
+    position: relative;
+    background-image: url(./img/5.jpg);
+    background-size: 100% 100%;
+}
+.c6{
+    position: relative;
+    background-image: url(./img/6.jpg);
+    background-size: 100% 100%;
+}
+.c7{
+    background-image: url(./img/7.jpg);
+    background-size: 100% 100%;
+}
+.c7 h3{
+    font-family:"poppin",sans-serif;
+    font-weight: lighter;
+    color: white;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+.c7 h2{
+    font-family:"poppin",sans-serif;
+    margin-left: 30px;
+    font-size: 30px;
+    margin-top: 10px;
+    color: white;
+}
+.c7 span{
+    background-color: white;
+    color: #AC60FF;
+    font-size: 35px;
+    margin-left: -5px;
+    padding: 8px 12px;
+}
+.c8{
+    position: relative;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    background-image: url(./img/8.jpg);
+    background-size: 100% 100%;
+}
+.c9{
+    position: relative;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-image: url(./img/10.jpg);
+    background-size: 100% 100%;
+}
+.c10{
+    position: relative;
+    background-image: url(./img/9.jpg);
+    background-size: 100% 100%;
+}
+.c11{
+    position: relative;
+    background-image: url(./img/11.jpg);
+    background-size: 100% 100%;
+}
+.c11 h1{
+    position: absolute;
+    font-family: "poppin",sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    top: 90px;
+    left: 30px;
+}
+.new10{
+    position: absolute;
+    height: 65px;
+    width: 60%;
+    /* border: 1px solid #000; */
+    background-color:#AC60FF;
+    border-radius: 50px;
+    background: linear-gradient(#F78EF8,#CE8CFE);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "poppin",sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    margin-top: 150px;
+    margin-left: 90px;
+}
+.new10:hover{
+    cursor: pointer;
+    background:linear-gradient(#CE8CFE,#F78EF8);
+}
+.c12{
+    position: relative;
+    background-image: url(./img/12.jpg);
+    background-size: 100% 100%;
+}
+.c13{
+    position: relative;
+    background-image: url(./img/13.jpg);
+    background-size: 100% 100%;
+}
+.horn{
+    position: absolute;
+    font-size: 70px;
+    color: #9E2585;
+    margin-top: 70px;
+    margin-left: 140px;
+}
+.new13{
+    position: absolute;
+    height: 70px;
+    width: 60%;
+    /* border: 1px solid green; */
+    left: 70px;
+    top: 150px;
+}
+.new13 h1{
+    font-family:"poppin",sans-serif;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+.new13 h1:hover{
+    cursor: pointer;
+}
+.c14{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    background-image: url(./img/14.jpg);
+    background-size: 100% 100%;
+}
+.new3{
+    height: 250px;
+    width: 80%;
+    /* border: 1px solid #000;   */
+    background-color: rgba(255, 255, 255, 0.806);
+    margin-top: 49.5px;
+    margin-left: auto;
+}
+.comma{
+    font-size: 40px;
+    margin-left: 30px;
+    margin-top: 50px;
+}
+.new3 h2{
+    font-family: "poppin",sans-serif;
+    font-size: 25px;
+    line-height: 35px;
+    margin-left: 80px;
+}
+.new3 h3{
+    font-family: "poppin",sans-serif;
+    margin-left: 380px;
+    margin-top: 30px;
+    font-size: 22px;
+    font-weight: lighter;
+}
+.main2{
+    height: 200px;
+    width: 100%;
+    /* border: 1px solid blue; */
+}
+.new4{
+    height: 70px;
+    width: 12%;
+    /* border: 1px solid #000; */
+    margin-left: 600px;
+    margin-top: 80px;
+}
+.main2 h4{
+    font-family: "poppin",sans-serif;
+    font-size: 14px;
+    margin-left: 520px;
+    color: rgba(0, 0, 0, 0.705);
+}
+.new5{
+    height: 40px;
+    width: 17%;
+    /* border: 1px solid blue; */
+    margin-left: 550px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.drib:hover{
+    cursor: pointer;
+    color: #FF3272;
+    transition-duration: 0.5s;
+}
